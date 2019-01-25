@@ -39,6 +39,7 @@ Or install it yourself as:
 
 123456.to_w
 # => "one hundred twenty-three thousand four hundred fifty-six"
+```
 
 ## Development
 
