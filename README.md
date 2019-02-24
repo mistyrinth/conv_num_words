@@ -22,22 +22,22 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-0.to_w
+0.to_word
 # => "zero"
 
-10.to_w
+10.to_word
 # => "ten"
 
-123.to_w
+123.to_word
 # => "one hundred twenty-three"
 
-1234.to_w
+1234.to_word
 # => "one thousand two hundred thirty-four"
 
-12345.to_w
+12345.to_word
 # => "twelve thousand three hundred forty-five"
 
-123456.to_w
+123456.to_word
 # => "one hundred twenty-three thousand four hundred fifty-six"
 ```
 

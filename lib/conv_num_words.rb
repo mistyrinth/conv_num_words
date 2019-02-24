@@ -8,7 +8,7 @@ end
 
 # Extension of Numeric class
 class Numeric
-  def to_w
+  def to_word
     case self
     when 0
       "zero"
@@ -69,22 +69,22 @@ class Numeric
     when 21 .. 99
       tens_digit = (self / 10).to_i
       ones_digit = self - tens_digit * 10
-      (tens_digit * 10).to_w + "-" + ones_digit.to_w
+      (tens_digit * 10).to_word + "-" + ones_digit.to_word
     when 100 .. 999
       hundreds_digit = (self / 100).to_i
       under_digit = self - hundreds_digit * 100
       if self % 100 == 0
-        hundreds_digit.to_w + " hundred"
+        hundreds_digit.to_word + " hundred"
       else
-        hundreds_digit.to_w + " hundred " + under_digit.to_w
+        hundreds_digit.to_word + " hundred " + under_digit.to_word
       end
     when 1000 .. 999999
       thousands_digit = (self / 1000).to_i
       under_digit = self - thousands_digit * 1000
       if self % 1000 == 0
-        thousands_digit.to_w + " thousand"
+        thousands_digit.to_word + " thousand"
       else
-        thousands_digit.to_w + " thousand " + under_digit.to_w
+        thousands_digit.to_word + " thousand " + under_digit.to_word
       end
     else
       self.to_s
